@@ -222,10 +222,6 @@ button:focus {
   padding: 3px;
 }
 
-.preloader {
-  position: absolute;
-}
-
 .content__card-link {
   display: block;
   text-decoration: none;
