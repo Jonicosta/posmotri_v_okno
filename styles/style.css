@@ -199,7 +199,7 @@ button:focus {
   display: grid;
   inline-size: 100%;
   block-size: 100%;
-  gap: 26px;
+  gap: 22px;
 }
 
 .title {
@@ -215,11 +215,15 @@ button:focus {
 
 .content__list {
   display: grid;
-  gap: 30px;
+  gap: 33px;
   position: relative;
   block-size: 296px;
   overflow: auto;
   padding: 3px;
+}
+
+.preloader {
+  position: absolute;
 }
 
 .content__card-link {
