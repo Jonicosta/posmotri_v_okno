@@ -18,8 +18,6 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-
-  padding-top: 133px;
 }
 
 h1,
@@ -147,18 +145,21 @@ button:focus {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
-  height: 19px;
-  width: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 19px;
+  min-inline-size: 19px;
   border: 1px solid #fff;
 }
 
 .search-form__checkbox[type='checkbox']:checked
-  + .search-form__pseudo-checkbox {
-  background-image: url(./Rectangle.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  + .search-form__pseudo-checkbox::after {
+  content: '';
+  background-color: #FFF;
+  display: flex;
+  min-block-size: 16px;
+  min-inline-size: 16px;
 }
 
 .search-form__checkbox[type='checkbox']:focus-visible
@@ -182,6 +183,7 @@ button:focus {
 
 .button:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .button:focus-visible {
@@ -258,7 +260,7 @@ button:focus {
 
 .content__video-card-title {
   color: #fff;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
